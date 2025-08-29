@@ -1,0 +1,6 @@
+Eixo 0 = esquerda / Direita (analogico esquerdo)
+Eixo 1 = frente / tras (analogico esquerdo)\
+Eixo 2 = esquerda /  Direita (analogico direito)
+
+Button 1 = (botao X)
+Button 2 = (botao bolinha)
