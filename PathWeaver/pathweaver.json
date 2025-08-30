@@ -1,9 +1,0 @@
-{
-  "lengthUnit": "Meter",
-  "exportUnit": "Always Meters",
-  "maxVelocity": 4.5,
-  "maxAcceleration": 2.0,
-  "trackWidth": 20.0,
-  "gameName": "Reefscape",
-  "outputDir": "../../PathWeaver"
-}
