@@ -3,6 +3,7 @@ import wpilib.drive
 import rev
 from drivetrain import DriveTrain
 from drivetrain_cheesy_Drive import DriveTrain_cheesy_Drive
+from climber_motors import Climber
 
 class Robot(wpilib.TimedRobot):
     def robotInit(self):
@@ -10,7 +11,7 @@ class Robot(wpilib.TimedRobot):
         self.joystick = wpilib.Joystick(0)
         self.timer = wpilib.Timer()
         self.drive = DriveTrain_cheesy_Drive()
-        
+        self.climber = Climber
 
     def teleopInit(self):
         pass
@@ -43,7 +44,7 @@ class Robot(wpilib.TimedRobot):
             self.drive.arcadeDrive(0, 0)
             self.drive.climber_motors.set(0)
 
-    #
+    
 
             
     
