@@ -2,12 +2,14 @@ import wpilib
 import wpilib.drive
 import rev
 from drivetrain import DriveTrain
+from climber_motors import Climber
 
 class Robot(wpilib.TimedRobot):
     def robotInit(self):
         self.drive = DriveTrain()
         self.joystick = wpilib.Joystick(0)
         self.timer = wpilib.Timer()
+        self.climber = Climber()
 
     def teleopInit(self):
         pass
