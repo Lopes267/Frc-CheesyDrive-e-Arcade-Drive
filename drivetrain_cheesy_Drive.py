@@ -1,13 +1,13 @@
 import wpilib
 import wpilib.drive
-from rev import CANSparkMax, CANSparkMaxLowLevel
+import rev
 
 class DriveTrain_cheesy_Drive():
     def __init__(self):
-        self.left_front_motor = CANSparkMax(1, CANSparkMaxLowLevel.MotorType.kBrushed)
-        self.left_back_motor = CANSparkMax(2, CANSparkMaxLowLevel.MotorType.kBrushed)
-        self.right_front_motor = CANSparkMax(3, CANSparkMaxLowLevel.MotorType.kBrushed)
-        self.right_back_motor = CANSparkMax(4, CANSparkMaxLowLevel.MotorType.kBrushed)
+        self.left_front_motor = rev.SparkMax(1, rev.SparkMaxLowLevel.MotorType.kBrushed)
+        self.left_back_motor = rev.SparkMax(2, rev.SparkMaxLowLevel.MotorType.kBrushed)
+        self.right_front_motor = rev.SparkMax(3, rev.SparkMaxLowLevel.MotorType.kBrushed)
+        self.right_back_motor = rev.SparkMax(4, rev.SparkMaxLowLevel.MotorType.kBrushed)
 
         
         # Drive motors
